@@ -1,0 +1,18 @@
+query Post($slug: ID!) {
+  post(id: $slug, idType: SLUG) {
+    id
+    title
+    featuredImage {
+      node {
+        link
+        sourceUrl
+      }
+    }
+    content
+    author {
+      node {
+        name
+      }
+    }
+  }
+}

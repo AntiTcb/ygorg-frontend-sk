@@ -1,0 +1,21 @@
+query HomePagePosts {
+  posts {
+    nodes {
+      id
+      title
+      slug
+      featuredImage {
+        node {
+          link
+          sourceUrl
+        }
+      }
+      excerpt
+      author {
+        node {
+          name
+        }
+      }
+    }
+  }
+}
