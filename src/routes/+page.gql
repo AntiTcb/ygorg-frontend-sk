@@ -1,19 +1,32 @@
-query HomePagePosts {
-  posts {
-    nodes {
-      id
-      title
-      slug
-      featuredImage {
-        node {
-          link
-          sourceUrl
-        }
-      }
-      excerpt
-      author {
-        node {
-          name
+query HomePagePosts($categories: [String] = []) {
+  categories(where: { name: $categories }) {
+    edges {
+      node {
+        name
+        databaseId
+        posts {
+          nodes {
+            title
+            slug
+            excerpt
+            author {
+              node {
+                name
+                uri
+              }
+            }
+            featuredImage {
+              node {
+                mediaItemUrl
+              }
+            }
+            categories {
+              nodes {
+                name
+                slug
+              }
+            }
+          }
         }
       }
     }

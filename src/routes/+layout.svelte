@@ -6,5 +6,11 @@
 </script>
 
 <ParaglideJS {i18n}>
-  {@render children()}
+  <header class="sticky top-0">
+    <div class="bg-secondary">(Header)</div>
+  </header>
+  <main class="container bg-primary">
+    {@render children()}
+  </main>
+  <footer>Footer</footer>
 </ParaglideJS>
