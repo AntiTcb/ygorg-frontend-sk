@@ -5,25 +5,28 @@ query HomePagePosts($categories: [String] = []) {
         name
         databaseId
         posts {
-          nodes {
-            title
-            slug
-            excerpt
-            author {
-              node {
-                name
-                uri
+          edges {
+            cursor
+            node {
+              title
+              slug
+              content
+              author {
+                node {
+                  name
+                  uri
+                }
               }
-            }
-            featuredImage {
-              node {
-                mediaItemUrl
+              featuredImage {
+                node {
+                  mediaItemUrl
+                }
               }
-            }
-            categories {
-              nodes {
-                name
-                slug
+              categories {
+                nodes {
+                  name
+                  slug
+                }
               }
             }
           }

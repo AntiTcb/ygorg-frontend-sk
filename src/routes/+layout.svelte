@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Header from '$lib/components/Header.svelte';
   import { i18n } from '$lib/i18n';
   import { ParaglideJS } from '@inlang/paraglide-sveltekit';
   import '../app.postcss';
@@ -6,10 +7,8 @@
 </script>
 
 <ParaglideJS {i18n}>
-  <header class="sticky top-0">
-    <div class="bg-secondary">(Header)</div>
-  </header>
-  <main class="container bg-primary">
+  <Header />
+  <main class="container bg-secondary px-4">
     {@render children()}
   </main>
   <footer>Footer</footer>
