@@ -2,7 +2,7 @@
   import LoginIcon from '~icons/mdi/login';
 </script>
 
-<header class="sticky top-0 z-30 h-12 gap-4 bg-primary px-2">
+<header class="sticky top-0 z-30 h-12 gap-4 bg-secondary px-2">
   <nav class="grid grid-cols-[auto,1fr,auto] items-center gap-2">
     <a href="/">
       <img src="/android-chrome-192x192.png" alt="YGOrganization Logo" class="h-8" />

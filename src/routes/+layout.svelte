@@ -8,7 +8,7 @@
 
 <ParaglideJS {i18n}>
   <Header />
-  <main class="container bg-secondary px-4">
+  <main class="container bg-primary px-4 py-2">
     {@render children()}
   </main>
   <footer>Footer</footer>

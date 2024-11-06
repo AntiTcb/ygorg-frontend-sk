@@ -11,6 +11,7 @@ query HomePagePosts($categories: [String] = []) {
               title
               slug
               content
+              dateGmt
               author {
                 node {
                   name
