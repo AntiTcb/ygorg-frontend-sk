@@ -1,0 +1,7 @@
+name="ygorg-frontend-sk"
+compatibility_flags = [ "nodejs_compat" ]
+compatibility_date = "2024-09-23"
+
+[vars]
+NODE_VERSION = "22.11.0"
+PNPM_VERSION = "9.12.3"

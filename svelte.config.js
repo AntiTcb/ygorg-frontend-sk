@@ -10,6 +10,7 @@ const config = {
 
   kit: {
     adapter: adapter({
+      config: 'wrangler.toml',
       platformProxy: {
         configPath: './wrangler.toml',
       },
