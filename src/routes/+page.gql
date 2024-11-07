@@ -21,6 +21,11 @@ query HomePagePosts($categories: [String] = []) {
               featuredImage {
                 node {
                   mediaItemUrl
+                  altText
+                  mediaDetails {
+                    height
+                    width
+                  }
                 }
               }
               categories {
