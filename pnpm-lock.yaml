@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@inlang/paraglide-sveltekit':
-        specifier: ^0.11.5
+        specifier: 0.11.5
         version: 0.11.5(@sveltejs/kit@2.7.4(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.1.9)(vite@5.4.10(@types/node@22.9.0)))(svelte@5.1.9)(vite@5.4.10(@types/node@22.9.0)))
       svelte-persisted-state:
         specifier: ^0.1.0
@@ -21,6 +21,9 @@ importers:
       '@iconify-json/mdi':
         specifier: ^1.2.1
         version: 1.2.1
+      '@inlang/paraglide-js':
+        specifier: 1.11.3
+        version: 1.11.3
       '@playwright/test':
         specifier: ^1.48.2
         version: 1.48.2
