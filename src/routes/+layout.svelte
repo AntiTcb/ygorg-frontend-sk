@@ -9,7 +9,7 @@
 
 <ParaglideJS {i18n}>
   <Header />
-  <main class="bg-primary px-4 py-2">
+  <main class="px-4 py-2 bg-secondary-200-800">
     {#if $navigating}
       <p>Loading...</p>
     {:else}

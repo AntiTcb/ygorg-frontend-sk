@@ -42,16 +42,19 @@
       class=" w-full"
       alt={post.featuredImage?.node.altText ?? post.title} />
   </header>
-  <article class="p-2">
+  <article class="space-y-2 p-2">
     <div>
-      <h2 class="h6 text-center">{post.title}</h2>
+      <h2 class="text-balance text-center text-sm underline underline-offset-2 shadow-primary-500 drop-shadow-md md:text-lg">
+        {post.title}
+      </h2>
     </div>
-    <div class="">
+    <hr class="border-primary-500" />
+    <div class="text-center text-sm">
       {@html post.content?.split('<!--more-->').at(0) ?? 'Read more...'}
     </div>
   </article>
-  <footer class="flex items-center justify-between gap-2 p-2">
-    <small class="opacity-85">{post.author?.node.name} / {category}</small>
-    <small class="italic opacity-85">{new Date(post.dateGmt!).toLocaleDateString()}</small>
+  <footer class="flex flex-col items-center justify-between gap-2 p-2 text-xs opacity-75 md:flex-row">
+    <span class="">{post.author?.node.name} / {category}</span>
+    <span class="italic">{new Date(post.dateGmt!).toLocaleDateString()}</span>
   </footer>
 </a>

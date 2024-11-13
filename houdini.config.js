@@ -6,7 +6,7 @@ const config = {
     url(env) {
       return `${env.PUBLIC_WP_GQL_URL}`;
     },
-    interval: 1,
+    interval: 0,
     headers: {
       'GraphQL-Preflight': '1',
       'Access-Control-Allow-Origin': '*',
