@@ -8,6 +8,7 @@ import { themes } from './src/themes';
 
 const config: Config = {
   content: ['./src/**/*.{html,js,svelte,ts}', join(require.resolve('@skeletonlabs/skeleton-svelte'), '../**/*.{html,js,svelte,ts}')],
+  darkMode: 'class',
   theme: {
     extend: {},
   },

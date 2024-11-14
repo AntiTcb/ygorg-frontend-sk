@@ -4,7 +4,7 @@
 const config = {
   watchSchema: {
     url(env) {
-      return `${env.PUBLIC_WP_GQL_URL}`;
+      return `${env.PUBLIC_WP_URL}/graphql`;
     },
     interval: 0,
     headers: {

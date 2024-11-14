@@ -1,40 +1,49 @@
 <script lang="ts">
-  import { AppBar, Modal } from '@skeletonlabs/skeleton-svelte';
+  import { getAuth } from '$lib/stores/auth.svelte';
+  import { AppBar, Modal, type ToastContext, Tooltip } from '@skeletonlabs/skeleton-svelte';
+  import { getContext } from 'svelte';
   import LoginIcon from '~icons/mdi/login';
+  import LogoutIcon from '~icons/mdi/logout';
   import SearchIcon from '~icons/mdi/magnify';
   import HamburgerIcon from '~icons/mdi/menu';
+  import Login from './Login.svelte';
   import ThemeSwitcher from './ThemeSwitcher.svelte';
 
-  let username = $state('');
-  let password = $state('');
+  const authStore = getAuth();
+  const toast = getContext<ToastContext>('toast');
 
-  const login = async () => {
-    const res = await fetch('https://ygorganization.com/wp-json/jwt-auth/v1/token', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ username, password }),
-    });
-
-    console.log(res);
-    console.log(await res.json());
+  const logout = () => {
+    authStore.logout();
+    if (!authStore.user) {
+      toast.create({
+        title: 'Successfully logged out',
+        type: 'success',
+      });
+    }
   };
 </script>
 
-<AppBar classes="!bg-secondary-500">
+<AppBar classes="!bg-secondary-500 py-2" toolbarGap="gap-2" leadClasses="items-center" trailClasses="items-center">
   {#snippet lead()}
     <a href="/" title="YGOrganization">
-      <img src="/android-chrome-192x192.png" alt="YGOrganization Logo" class="h-8" />
+      <img src="/android-chrome-192x192.png" alt="YGOrganization Logo" class="h-10" />
     </a>
     <Modal
       triggerBase="preset-primary-500"
-      contentBase="bg-surface-100-900 p-4 space-y-2 shadow-xl w-[60%] h-screen"
+      triggerClasses="flex"
+      contentBase="bg-surface-100-900 p-4 space-y-2 shadow-xl w-[40%] h-screen"
       positionerJustify="justify-start"
       positionerAlign=""
-      positionerPadding="">
+      positionerPadding=""
+      transitionsPositionerIn={{ x: -200, duration: 200 }}
+      transitionsPositionerOut={{ x: -200, duration: 200 }}>
       {#snippet trigger()}
-        <HamburgerIcon class="size-8" />
+        <Tooltip openDelay={200} contentBase="card bg-surface-500 p-2" triggerClasses="flex">
+          {#snippet trigger()}
+            <HamburgerIcon class="size-10 hover:text-primary-500" />
+          {/snippet}
+          {#snippet content()}<p>Menu</p>{/snippet}
+        </Tooltip>
       {/snippet}
       {#snippet content()}
         <div class="hidden items-center gap-2 justify-self-center md:flex">
@@ -49,26 +58,37 @@
   {/snippet}
   {#snippet trail()}
     <span title="Search">
-      <SearchIcon class="size-8" />
-    </span>
-    <span title="Login">
-      <Modal
-        triggerBase="preset-primary-500"
-        contentBase="bg-surface-100-900 p-4 space-y-2 shadow-xl w-[60%] h-screen"
-        positionerJustify="justify-end"
-        positionerAlign=""
-        positionerPadding="">
+      <Tooltip openDelay={200} contentBase="card bg-surface-500 p-2" triggerClasses="flex">
         {#snippet trigger()}
-          <LoginIcon class="size-8" />
+          <SearchIcon class="size-10" />
         {/snippet}
-        {#snippet content()}
-          <div>
-            <input type="text" name="username" placeholder="Username" class="input" bind:value={username} />
-            <input type="password" name="password" placeholder="Password" class="input" bind:value={password} />
-            <button type="button" class="btn" onclick={login}>Login</button>
-          </div>
-        {/snippet}
-      </Modal>
+        {#snippet content()}<p>Search</p>{/snippet}
+      </Tooltip>
     </span>
+    {#if authStore.user}
+      <!-- TODO: User Menu component -->
+      <p>Hi {authStore.user.displayName}</p>
+      <button onclick={logout}>
+        <LogoutIcon class="size-10" />
+      </button>
+    {:else}
+      <span title="Login">
+        <Modal
+          triggerBase="preset-primary-500"
+          contentBase="bg-surface-100-900 p-4 space-y-2 shadow-xl w-[40%] h-screen"
+          positionerJustify="justify-end"
+          positionerAlign=""
+          positionerPadding=""
+          transitionsPositionerIn={{ x: 200, duration: 200 }}
+          transitionsPositionerOut={{ x: 200, duration: 200 }}>
+          {#snippet trigger()}
+            <LoginIcon class="size-8" />
+          {/snippet}
+          {#snippet content()}
+            <Login />
+          {/snippet}
+        </Modal>
+      </span>
+    {/if}
   {/snippet}
 </AppBar>
