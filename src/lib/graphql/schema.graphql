@@ -755,9 +755,9 @@ type Comment implements DatabaseIdentifier & Node & UniformResourceIdentifiable 
   author: CommentToCommenterConnectionEdge
 
   """
-  IP address for the author. This field is equivalent to WP_Comment-&gt;comment_author_IP and the value matching the &quot;comment_author_IP&quot; column in SQL.
+  IP address for the author at the time of commenting. This field is equivalent to WP_Comment-&gt;comment_author_IP and the value matching the &quot;comment_author_IP&quot; column in SQL.
   """
-  authorIp: String
+  authorIp: String @deprecated(reason: "Use the ipAddress field on the edge between the comment and author")
 
   """ID for the comment, unique among comments."""
   commentId: Int @deprecated(reason: "Deprecated in favor of databaseId")
@@ -1111,8 +1111,22 @@ type CommentToCommenterConnectionEdge implements CommenterConnectionEdge & Edge 
   """
   cursor: String
 
+  """The email address representing the author for this particular comment"""
+  email: String
+
+  """
+  IP address of the author at the time of making this comment. This field is equivalent to WP_Comment-&gt;comment_author_IP and the value matching the &quot;comment_author_IP&quot; column in SQL.
+  """
+  ipAddress: String
+
+  """The display name of the comment author for this particular comment"""
+  name: String
+
   """The node of the connection, without the edges"""
   node: Commenter!
+
+  """The url entered for the comment author on this particular comment"""
+  url: String
 }
 
 """Connection between the Comment type and the ContentNode type"""
@@ -4796,6 +4810,15 @@ enum MimeTypeEnum {
 
   """image/heic mime type."""
   IMAGE_HEIC
+
+  """image/heic-sequence mime type."""
+  IMAGE_HEIC_SEQUENCE
+
+  """image/heif mime type."""
+  IMAGE_HEIF
+
+  """image/heif-sequence mime type."""
+  IMAGE_HEIF_SEQUENCE
 
   """image/jpeg mime type."""
   IMAGE_JPEG

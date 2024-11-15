@@ -4,9 +4,9 @@
 const config = {
   watchSchema: {
     url(env) {
-      return `${env.PUBLIC_WP_GQL_URL}`;
+      return `${env.PUBLIC_WP_URL}/graphql`;
     },
-    interval: 1,
+    interval: 0,
     headers: {
       'GraphQL-Preflight': '1',
       'Access-Control-Allow-Origin': '*',
