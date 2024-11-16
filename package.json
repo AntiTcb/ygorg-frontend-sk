@@ -3,10 +3,10 @@
     "version": "0.0.1",
     "private": true,
     "type": "module",
-    "packageManager": "pnpm@9.13.0",
+    "packageManager": "pnpm@9.13.2",
     "engines": {
         "node": "^20",
-        "pnpm": "^9.13.0"
+        "pnpm": "^9.13.2"
     },
     "scripts": {
         "dev": "vite dev",
@@ -31,19 +31,19 @@
         "@playwright/test": "^1.48.2",
         "@skeletonlabs/skeleton": "3.0.0-next.9",
         "@skeletonlabs/skeleton-svelte": "1.0.0-next.13",
-        "@storybook/addon-essentials": "^8.4.3",
-        "@storybook/addon-interactions": "^8.4.3",
-        "@storybook/addon-links": "^8.4.3",
+        "@storybook/addon-essentials": "^8.4.4",
+        "@storybook/addon-interactions": "^8.4.4",
+        "@storybook/addon-links": "^8.4.4",
         "@storybook/addon-svelte-csf": "^5.0.0-next.11",
-        "@storybook/blocks": "^8.4.3",
-        "@storybook/svelte": "^8.4.3",
-        "@storybook/sveltekit": "^8.4.3",
-        "@storybook/test": "^8.4.3",
+        "@storybook/blocks": "^8.4.4",
+        "@storybook/svelte": "^8.4.4",
+        "@storybook/sveltekit": "^8.4.4",
+        "@storybook/test": "^8.4.4",
         "@sveltejs/adapter-auto": "^3.3.1",
         "@sveltejs/adapter-cloudflare": "^4.7.4",
         "@sveltejs/enhanced-img": "^0.4.1",
-        "@sveltejs/kit": "^2.8.0",
-        "@sveltejs/vite-plugin-svelte": "^4.0.0",
+        "@sveltejs/kit": "^2.8.1",
+        "@sveltejs/vite-plugin-svelte": "^4.0.1",
         "@tailwindcss/aspect-ratio": "^0.4.2",
         "@tailwindcss/container-queries": "^0.1.1",
         "@tailwindcss/forms": "^0.5.9",
@@ -51,7 +51,7 @@
         "@types/eslint": "^9.6.1",
         "@types/node": "^22.9.0",
         "autoprefixer": "^10.4.20",
-        "eslint": "^9.14.0",
+        "eslint": "^9.15.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-svelte": "^2.46.0",
         "globals": "^15.12.0",
@@ -63,12 +63,12 @@
         "prettier-plugin-svelte": "^3.2.8",
         "prettier-plugin-tailwindcss": "^0.6.8",
         "runed": "^0.15.3",
-        "storybook": "^8.4.3",
-        "svelte": "^5.1.16",
-        "svelte-check": "^4.0.7",
+        "storybook": "^8.4.4",
+        "svelte": "^5.2.1",
+        "svelte-check": "^4.0.8",
         "tailwind-merge": "^2.5.4",
         "tailwind-variants": "^0.3.0",
-        "tailwindcss": "^3.4.14",
+        "tailwindcss": "^3.4.15",
         "tailwindcss-animate": "^1.0.7",
         "typescript": "^5.6.3",
         "typescript-eslint": "^8.14.0",
@@ -88,6 +88,6 @@
         "svelte-persisted-state": "^0.1.0"
     },
     "overrides": {
-        "@sveltejs/vite-plugin-svelte": "^4.0.0"
+        "@sveltejs/vite-plugin-svelte": "^4.0.1"
     }
 }
