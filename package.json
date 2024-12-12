@@ -42,7 +42,7 @@
         "@sveltejs/adapter-auto": "^3.3.1",
         "@sveltejs/adapter-cloudflare": "^4.8.0",
         "@sveltejs/enhanced-img": "^0.4.3",
-        "@sveltejs/kit": "^2.10.0",
+        "@sveltejs/kit": "^2.10.1",
         "@sveltejs/vite-plugin-svelte": "^5.0.1",
         "@tailwindcss/aspect-ratio": "^0.4.2",
         "@tailwindcss/container-queries": "^0.1.1",
@@ -64,7 +64,7 @@
         "prettier-plugin-tailwindcss": "^0.6.9",
         "runed": "^0.18.0",
         "storybook": "^8.4.7",
-        "svelte": "^5.10.0",
+        "svelte": "^5.11.2",
         "svelte-check": "^4.1.1",
         "tailwind-merge": "^2.5.5",
         "tailwind-variants": "^0.3.0",
@@ -84,7 +84,7 @@
         }
     },
     "dependencies": {
-        "@inlang/paraglide-sveltekit": "0.12.1",
+        "@inlang/paraglide-sveltekit": "0.14.0",
         "svelte-persisted-state": "^0.1.0"
     },
     "overrides": {
