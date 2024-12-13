@@ -34,16 +34,16 @@
         "@storybook/addon-essentials": "^8.4.7",
         "@storybook/addon-interactions": "^8.4.7",
         "@storybook/addon-links": "^8.4.7",
-        "@storybook/addon-svelte-csf": "5.0.0-next.14",
+        "@storybook/addon-svelte-csf": "5.0.0-next.15",
         "@storybook/blocks": "^8.4.7",
         "@storybook/svelte": "^8.4.7",
         "@storybook/sveltekit": "^8.4.7",
         "@storybook/test": "^8.4.7",
         "@sveltejs/adapter-auto": "^3.3.1",
         "@sveltejs/adapter-cloudflare": "^4.8.0",
-        "@sveltejs/enhanced-img": "^0.4.3",
-        "@sveltejs/kit": "^2.10.0",
-        "@sveltejs/vite-plugin-svelte": "^5.0.1",
+        "@sveltejs/enhanced-img": "^0.4.4",
+        "@sveltejs/kit": "^2.11.1",
+        "@sveltejs/vite-plugin-svelte": "^5.0.2",
         "@tailwindcss/aspect-ratio": "^0.4.2",
         "@tailwindcss/container-queries": "^0.1.1",
         "@tailwindcss/forms": "^0.5.9",
@@ -64,7 +64,7 @@
         "prettier-plugin-tailwindcss": "^0.6.9",
         "runed": "^0.18.0",
         "storybook": "^8.4.7",
-        "svelte": "^5.10.0",
+        "svelte": "^5.12.0",
         "svelte-check": "^4.1.1",
         "tailwind-merge": "^2.5.5",
         "tailwind-variants": "^0.3.0",
@@ -84,10 +84,10 @@
         }
     },
     "dependencies": {
-        "@inlang/paraglide-sveltekit": "0.12.1",
+        "@inlang/paraglide-sveltekit": "0.14.0",
         "svelte-persisted-state": "^0.1.0"
     },
     "overrides": {
-        "@sveltejs/vite-plugin-svelte": "^5.0.1"
+        "@sveltejs/vite-plugin-svelte": "^5.0.2"
     }
 }
