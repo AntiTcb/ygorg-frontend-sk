@@ -127,8 +127,8 @@ importers:
         specifier: ^0.6.9
         version: 0.6.9(prettier-plugin-svelte@3.3.2(prettier@3.4.2)(svelte@5.14.0))(prettier@3.4.2)
       runed:
-        specifier: ^0.18.0
-        version: 0.18.0(svelte@5.14.0)
+        specifier: ^0.19.0
+        version: 0.19.0(svelte@5.14.0)
       storybook:
         specifier: ^8.4.7
         version: 8.4.7(prettier@3.4.2)
@@ -3602,10 +3602,10 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
-  runed@0.18.0:
-    resolution: {integrity: sha512-siuvOl9Qa1A/gDHE3HuxG1fQQMkh6aOMqKDdGvcRbl53aiz3JbxTrf6DcA/lai8SAR1EMwOs8xX6Vk2PGHXOgA==}
+  runed@0.19.0:
+    resolution: {integrity: sha512-VxUk/Lbm5WPR/b+NDQ+Itp/anG6bUWXH+JBUNA1M/YG/lsKZ1Gn+WwvBwyE/8aTpAV7ij12aEVxh78utqi/Q4A==}
     peerDependencies:
-      svelte: ^5.0.0-next.1
+      svelte: ^5.7.0
 
   rusha@0.8.14:
     resolution: {integrity: sha512-cLgakCUf6PedEu15t8kbsjnwIFFR2D4RfL+W3iWFJ4iac7z4B0ZI8fxy4R3J956kAI68HclCFGL8MPoUVC3qVA==}
@@ -7925,7 +7925,7 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  runed@0.18.0(svelte@5.14.0):
+  runed@0.19.0(svelte@5.14.0):
     dependencies:
       esm-env: 1.2.1
       svelte: 5.14.0
