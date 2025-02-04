@@ -61,8 +61,8 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))
       '@sveltejs/adapter-cloudflare':
-        specifier: ^4.9.0
-        version: 4.9.0(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(wrangler@3.85.0(@cloudflare/workers-types@4.20241202.0))
+        specifier: ^5.0.2
+        version: 5.0.2(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(wrangler@3.85.0(@cloudflare/workers-types@4.20241202.0))
       '@sveltejs/enhanced-img':
         specifier: ^0.4.4
         version: 0.4.4(rollup@4.34.1)(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1))
@@ -1797,11 +1797,11 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/adapter-cloudflare@4.9.0':
-    resolution: {integrity: sha512-o7o8wXy5zDsEuE9oPWSHO5tAuPEulZZg2QavFdc00fcIHh1dxgCyIRZa5LPjAE8EcdJOh+8SFkhFgVRdCfOBvQ==}
+  '@sveltejs/adapter-cloudflare@5.0.2':
+    resolution: {integrity: sha512-jlNRYFQ5mfmHmBqF79GhbFty/BTU+HZvgaT1uDREQmUcngT5j8yV85pxCOORl1r7rIVd0silRNBD5RJFsU5UUg==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
-      wrangler: ^3.28.4
+      wrangler: ^3.87.0
 
   '@sveltejs/enhanced-img@0.4.4':
     resolution: {integrity: sha512-BlBTGfbLUgHa+zSVrsGLOd+noCKWfipoOjoxE26bAAX97v7zh5eiCAp1KEdpkluL05Tl3+nR14gQdPsATyZqoA==}
@@ -6144,11 +6144,11 @@ snapshots:
       '@sveltejs/kit': 2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1))
       import-meta-resolve: 4.1.0
 
-  '@sveltejs/adapter-cloudflare@4.9.0(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(wrangler@3.85.0(@cloudflare/workers-types@4.20241202.0))':
+  '@sveltejs/adapter-cloudflare@5.0.2(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(wrangler@3.85.0(@cloudflare/workers-types@4.20241202.0))':
     dependencies:
       '@cloudflare/workers-types': 4.20241202.0
       '@sveltejs/kit': 2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.19.7)(vite@6.0.11(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1))
-      esbuild: 0.24.0
+      esbuild: 0.24.2
       worktop: 0.8.0-next.18
       wrangler: 3.85.0(@cloudflare/workers-types@4.20241202.0)
 
