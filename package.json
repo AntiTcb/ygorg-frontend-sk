@@ -85,7 +85,7 @@
     },
     "dependencies": {
         "@inlang/paraglide-sveltekit": "0.15.5",
-        "svelte-persisted-state": "^0.1.0"
+        "svelte-persisted-state": "^1.0.0"
     },
     "overrides": {
         "@sveltejs/vite-plugin-svelte": "^5.0.3"
