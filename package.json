@@ -58,7 +58,7 @@
         "houdini": "^1.5.1",
         "houdini-plugin-svelte-global-stores": "^1.4.1",
         "houdini-svelte": "^2.1.5",
-        "postcss": "^8.5.2",
+        "postcss": "^8.5.3",
         "prettier": "^3.5.1",
         "prettier-plugin-svelte": "^3.3.3",
         "prettier-plugin-tailwindcss": "^0.6.11",
