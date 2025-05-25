@@ -54,7 +54,7 @@
         "eslint": "^9.20.1",
         "eslint-config-prettier": "^10.0.1",
         "eslint-plugin-svelte": "^2.46.1",
-        "globals": "^15.15.0",
+        "globals": "^16.2.0",
         "houdini": "^1.5.1",
         "houdini-plugin-svelte-global-stores": "^1.4.1",
         "houdini-svelte": "^2.1.5",
